@@ -1,0 +1,292 @@
+<!-- Created by Swarup Mahato -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id = "load"><div id = "loader">LOADING...</div></div>
+        <div id = "yo">
+        <img src = "https://i.ibb.co/NnZ6LWj/mario.png" style = "display: block;">
+        <img src = "https://drive.google.com/thumbnail?id=1XjUC1dzEP-GCM6KbyhShZjz1uFZv8TkF" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1Y2USixLoQlYpEHiONc3vTJfLcP5UZMV4" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1qORyBsf4i4qA3g1jO1SlHz3rGmo4-nLX" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=19gS3bZOh623rFMqVP2aeLsT6xAKJE7v4" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1i12uzb_yh6d2h2krRrc5rQRuNdpBPENb" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1DiUmbfEi22zmfZw-ClXdJTbQ9eX45gfM" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1fAyA76nBef2L3I1F-CA4HxWyIVxNr1TH" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1PG4nGFDphbA7WTmnWq2jtKGatXm1sEf7" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1gZfMHuv4OBhtsiQ_91LQoHd74GhPdhCB" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1H0uQhROW_wF8Fbc5y03Pff4-0k5RB5a6" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=19OPHBzr4qjak1Miu93FzFPMCyHqOyob4" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1P0G9swz7Qzp7e_8ZpiWHX2QWckDNwLr7" style = "display: none;">
+        <img src = "https://drive.google.com/thumbnail?id=1voOdFQcPJlVRQSYIJwRXUpjmM317_A6F" style = "display: none;">    
+        <div id = "menu">
+            <div id = "shop-btn" onclick = "OpenShop();">SHOP</div>
+            <div id = "lvl-1" class = "lvl" onclick = "OpenLevel(0)" style = 'background-image: url("https://drive.google.com/thumbnail?id=1PG4nGFDphbA7WTmnWq2jtKGatXm1sEf7");'>LEVEL 1</div>
+            <div id = "lvl-2" class = "lvl" onclick = "OpenLevel(1)" style = 'background-image: url("https://drive.google.com/thumbnail?id=1i12uzb_yh6d2h2krRrc5rQRuNdpBPENb");'>LEVEL 2</div>
+            <div id = "lvl-3" class = "lvl" onclick = "OpenLevel(2)" style = 'background-image: url("https://drive.google.com/thumbnail?id=1i12uzb_yh6d2h2krRrc5rQRuNdpBPENb");'>LEVEL 3</div>
+            <div id = "lvl-4" class = "lvl" onclick = "OpenLevel(3)" style = 'background-image: url("https://drive.google.com/thumbnail?id=1i12uzb_yh6d2h2krRrc5rQRuNdpBPENb");'>LEVEL 4</div>
+            <div id = "lvl-5" class = "lvl" onclick = "OpenLevel(4)" style = 'background-image: url("https://drive.google.com/thumbnail?id=1i12uzb_yh6d2h2krRrc5rQRuNdpBPENb");'>LEVEL 5</div>
+        </div>
+        <div id = "shop">
+            <div id = "shop-heading">SHOP</div>
+            <div id = "shop-speed" class = "shop-criteria">
+                <div class = "criteria">SPEED</div>
+                <div class = "bar">
+                    <div id = "speed-bar" class = "bar-complete"></div>
+                </div>
+                <div class = "upgrade-btn" onclick = "speedInc()">
+                    UPGRADE
+                    <div id = "speed-inc-cost" class="cost">20</div>
+                </div>
+            </div>
+            <div id = "shop-jump" class = "shop-criteria">
+                <div class = "criteria">JUMP</div>
+                <div class = "bar">
+                    <div id = "jump-bar" class = "bar-complete"></div>
+                </div>
+                <div class = "upgrade-btn" onclick="jumpInc()">
+                    UPGRADE
+                    <div id = "jump-inc-cost" class="cost">10</div>
+                </div>
+            </div>
+            <div id = "specials">SPECIALS</div>
+            <div id = "shop-unlock" class = "special-btn" onclick = "UnlockLevels()">Unlock all levels: <div class = "special-cost">10</div></div>
+            <div id = "hard-game" class = "special-btn" onclick = "HardGame()">Disclose all thorns: <div class = "special-cost">50</div><div id = "not-rec">(NOT RECOMMENDED)</div></div>
+            <div id = "follow">
+                <div id = "follow-question">Are you following me?</div>
+                <div id = "follow-yes" class = "follow-answer" onclick = "FollowYes()">YES</div>
+                <div id = "follow-no" class = "follow-answer" onclick = "FollowNo()">NO</div>
+            </div>
+            <div id = "tutorials">TUTORIALS</div>
+            <div id = "excuse">(The videos are laggy because my laptop couldn't handle the screen recorder)</div>
+            <div class = "tut-lvl">
+                <div class = "tl-heading">LEVEL 1</div>
+                <video controls style="outline:none;">
+                    <source src="https://drive.google.com/uc?export=download&id=1V4iG-zV8xAWMzcC01CeD74-O3rhUZ1iY">
+                </video>
+            </div>
+            <div class = "tut-lvl">
+                <div class = "tl-heading">LEVEL 2</div>
+                <video controls style="outline:none;">
+                    <source src="https://drive.google.com/uc?export=download&id=1RhMIKghknL8XVXYJv1XyfUl7jqSed-__">
+                </video>
+            </div>
+            <div class = "tut-lvl">
+                <div class = "tl-heading">LEVEL 3</div>
+                <video controls style="outline:none;">
+                    <source src="https://drive.google.com/uc?export=download&id=13UAX8skp8KJrIVTbowC5-CkbGUj2XbGJ">
+                </video>
+            </div>
+            <div class = "tut-lvl">
+                <div class = "tl-heading">LEVEL 4</div>
+                <video controls style="outline:none;">
+                    <source src="https://drive.google.com/uc?export=download&id=1OkrtZbCbK6PHz5FFMGcy4VaJcp_oXxhx">
+                </video>
+            </div>
+            <div class = "tut-lvl">
+                <div class = "tl-heading">LEVEL 5</div>
+                <video controls style="outline:none;">
+                    <source src="https://drive.google.com/uc?export=download&id=1jRW4SHKK6G6QQRqdypE1xnYtF_TmZoQD">
+                </video>
+            </div>
+            <br><br><br>
+            <div id = "shop-back" onclick = "CloseShop()">BACK</div>
+        </div>
+        <div id = "game1" class = "game">
+            <div class = "mario"></div>
+            <div id = "a" class = "object land"></div>
+            <div id = "b" class = "object land"></div>
+            <div id = "c" class = "object land"></div>
+            <div id = "d" class = "object box"></div>
+            <div id = "e" class = "object box"></div>
+            <div id = "f" class = "object land"></div>
+            <div id = "g" class = "object land"></div>
+            <div id = "h" class = "object box"></div>
+            <div id = "i" class = "object spikes"></div>
+            <div id = "j" class = "object spikes"></div>
+            <div id = "k" class = "object spikes"></div>
+            <div id = "l" class = "object flag end"></div>
+            <div id = "m" class = "object stump end"></div>
+            <div id = "n" class = "object end"></div>
+            <div id = "o" class = "object coin"></div>
+            <div id = "p" class = "object coin"></div>
+            <div id = "q" class = "object coin"></div>
+            <div id = "r" class = "object coin"></div>
+        </div>
+        <div id = "game2" class = "game">
+            <div class = "mario"></div>
+            <div id = "aa" class = "object land"></div>
+            <div id = "ab" class = "object box"></div>
+            <div id = "ac" class = "object box"></div>
+            <div id = "ad" class = "object box"></div>
+            <div id = "ae" class = "object box"></div>
+            <div id = "af" class = "object box"></div>
+            <div id = "ag" class = "object spikes"></div>
+            <div id = "ah" class = "object spikes"></div>
+            <div id = "ai" class = "object spikes"></div>
+            <div id = "aj" class = "object box"></div>
+            <div id = "ak" class = "object spikes"></div>
+            <div id = "al" class = "object land"></div>
+            <div id = "am" class = "object land"></div>
+            <div id = "an" class = "object land"></div>
+            <div id = "ao" class = "object weak-land"></div>
+            <div id = "ap" class = "object weak-land"></div>
+            <div id = "aq" class = "object spikes"></div>
+            <div id = "ar" class = "object box"></div>
+            <div id = "as" class = "object land"></div>
+            <div id = "at" class = "object flag end"></div>
+            <div id = "au" class = "object stump end"></div>
+            <div id = "av" class = "object coin"></div>
+            <div id = "aw" class = "object coin"></div>
+            <div id = "ax" class = "object coin"></div>
+            <div id = "ay" class = "object box"></div>
+            <div id = "az" class = "object spikes"></div>
+            <div id = "ba" class = "object box"></div>
+            <div id = "bb" class = "object spikes"></div>
+            <div id = "bc" class = "object coin"></div>
+        </div>
+        <div id = "game3" class = "game">
+            <div class = "mario"></div>
+            <div id = "ca" class = "object land"></div>
+            <div id = "cb" class = "object box"></div>
+            <div id = "cc" class = "object box"></div>
+            <div id = "cd" class = "object creature"></div>
+            <div id = "ce" class = "object spikes"></div>
+            <div id = "cf" class = "object weak-land"></div>
+            <div id = "cg" class = "object land"></div>
+            <div id = "ch" class = "object spikes"></div>
+            <div id = "ci" class = "object box"></div>
+            <div id = "cj" class = "object land"></div>
+            <div id = "ck" class = "object land"></div>
+            <div id = "cl" class = "object coin"></div>
+            <div id = "cm" class = "object land"></div>
+            <div id = "cn" class = "object weak-land"></div>
+            <div id = "co" class = "object land"></div>
+            <div id = "cp" class = "object coin"></div>
+            <div id = "cq" class = "object box"></div>
+            <div id = "cr" class = "object spikes"></div>
+            <div id = "cs" class = "object spikes"></div>
+            <div id = "ct" class = "object spikes"></div>
+            <div id = "cu" class = "object land"></div>
+            <div id = "cv" class = "object land"></div>
+            <div id = "cw" class = "object land"></div>
+            <div id = "cx" class = "object creature"></div>
+            <div id = "cy" class = "object spikes"></div>
+            <div id = "cz" class = "object land"></div>
+            <div id = "da" class = "object flag end"></div>
+            <div id = "db" class = "object stump end"></div>
+            <div id = "dc" class = "object spikes"></div>
+            <div id = "dd" class = "object coin"></div>
+            <div id = "de" class = "object coin"></div>
+        </div>
+        <div id = "game4" class = "game">
+            <div class = "mario"></div>
+            <div id = "ea" class = "object land"></div>
+            <div id = "eb" class = "object weak-land"></div>
+            <div id = "ec" class = "object land"></div>
+            <div id = "ed" class = "object land"></div>
+            <div id = "ee" class = "object spikes"></div>
+            <div id = "ef" class = "object cannonball"></div>
+            <div id = "eg" class = "object cannon"></div>
+            <div id = "eh" class = "object land"></div>
+            <div id = "ei" class = "object weak-land"></div>
+            <div id = "ej" class = "object spikes"></div>
+            <div id = "ek" class = "object box"></div>
+            <div id = "el" class = "object spikes"></div>
+            <div id = "em" class = "object box"></div>
+            <div id = "en" class = "object coin"></div>
+            <div id = "eo" class = "object land"></div>
+            <div id = "ep" class = "object spikes"></div>
+            <div id = "eq" class = "object land"></div>
+            <div id = "er" class = "object land"></div>
+            <div id = "es" class = "object land"></div>
+            <div id = "et" class = "object cannonball"></div>
+            <div id = "eu" class = "object cannon"></div>
+            <div id = "ev" class = "object cannonball"></div>
+            <div id = "ew" class = "object cannon"></div>
+            <div id = "ex" class = "object land"></div>
+            <div id = "ey" class = "object creature"></div>
+            <div id = "ez" class = "object land"></div>
+            <div id = "fa" class = "object flag end"></div>
+            <div id = "fb" class = "object stump end"></div>
+            <div id = "fc" class = "object land"></div>
+            <div id = "fd" class = "object coin"></div>
+            <div id = "fe" class = "object coin"></div>
+            <div id = "ff" class = "object coin"></div>
+        </div>
+        <div id = "game5" class = "game">
+            <div class = "mario"></div>
+            <div id = "ga" class = "object land"></div>
+            <div id = "gb" class = "object box"></div>
+            <div id = "gc" class = "object box"></div>
+            <div id = "gd" class = "object box"></div>
+            <div id = "ge" class = "object coin"></div>
+            <div id = "gf" class = "object box"></div>
+            <div id = "gg" class = "object box"></div>
+            <div id = "gh" class = "object creature"></div>
+            <div id = "gi" class = "object spikes"></div>
+            <div id = "gj" class = "object spikes"></div>
+            <div id = "gk" class = "object box"></div>
+            <div id = "gl" class = "object weak-land left-right"></div>
+            <div id = "gm" class = "object moving-land"></div>
+            <div id = "gn" class = "object land"></div>
+            <div id = "go" class = "object land"></div>
+            <div id = "gp" class = "object land"></div>
+            <div id = "gq" class = "object land"></div>
+            <div id = "gr" class = "object spikes"></div>
+            <div id = "gs" class = "object moving-land up-down"></div>
+            <div id = "gt" class = "object coin"></div>
+            <div id = "gu" class = "object cannonball"></div>
+            <div id = "gv" class = "object cannon"></div>
+            <div id = "gw" class = "object land"></div>
+            <div id = "gx" class = "object land"></div>
+            <div id = "gy" class = "object land"></div>
+            <div id = "gz" class = "object land"></div>
+            <div id = "ha" class = "object flag end"></div>
+            <div id = "hb" class = "object stump end"></div>
+            <div id = "hc" class = "object coin"></div>
+            <div id = "hd" class = "object moving-land left-right"></div>
+            <div id = "he" class = "object cannonball"></div>
+            <div id = "hf" class = "object cannon"></div>
+            <div id = "hg" class = "object land"></div>
+            <div id = "hh" class = "object land"></div>
+        </div>
+        <div id = "dark"></div>
+        <div id = "lost" class = "result">
+            <div class = "heading">YOU LOST</div>
+            <button class = "btn" onclick = "Replay()">REPLAY</button>
+            <button class = "btn menu-btn" onclick = "ShowMenu()">MENU</button>
+        </div>
+        <div id = "won" class = "result">
+            <div class = "heading">YOU WON</div>
+            <button class = "btn" onclick = "Replay()">REPLAY</button>
+            <button class = "btn menu-btn" onclick = "ShowMenu()">MENU</button>
+            <button class = "btn next-lvl" onclick = "NextLevel()">NEXT LEVEL</button>
+        </div>
+        <div id = "coins"><div id = "coins-count"></div></div>
+        <div id = "alert-background">
+            <div id = "alert">
+                <div id = "alert-heading"></div>
+                <div id = "alert-text"></div>
+                <div id = "alert-illustration"></div>
+                <div id = "alert-button" onclick = "Close();">CLOSE</div>
+            </div>
+        </div>
+        <div id = "plus-ten">+10</div>
+        <div id = "notif"></div>
+        <div id = "btn-left" class = "controls">LEFT</div>
+        <div id = "btn-right" class = "controls">RIGHT</div>
+        <div id = "btn-up" class = "controls">JUMP</div>
+        <div id = "show-hide-btn" onclick = "ShowHideButton()">HIDE BUTTONS</div>
+        <div id = "restart-btn" onclick = "restartLevel()">RESTART</div>
+        <div id = "progress-bar">
+            <div id = "progress"></div>
+        </div>
+    </div></body>
+</html>
+
